@@ -11,6 +11,8 @@ fn main() -> GameResult {
     
     let mut state = State::new(ctx);
 
+    graphics::set_drawable_size(ctx, 400.0, 600.0)?;
+    
     event::run(ctx, &mut event_loop, &mut state)
 }
 
